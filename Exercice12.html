@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+let couleur = prompt("Choisissez une couleur de fond : gris, bleu ou vert").toLowerCase();
+
+switch(couleur) {
+    case "gris":
+        document.body.style.backgroundColor = "#C0C0C0";
+        break;
+    case "bleu":
+        document.body.style.backgroundColor = "#669999";
+        break;
+    case "vert":
+        document.body.style.backgroundColor = "#99FF66";
+        break;
+    default:
+        alert("Couleur non reconnue ! Veuillez choisir gris, bleu ou vert.");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    //question 1)
+// let taille = Number(prompt("Entrez votre taille en cm :"));
+// let age = Number(prompt("Entrez votre âge :"));
+// //let sexe = prompt("Entrez votre sexe (M/F) :");
+// let poids = (taille - 100 + age/10) * 0.9;
+// alert("Votre poids idéal est : " + poids);
+
+//question 2)
+    let taille = Number(prompt("Entrez votre taille en cm :"));
+    let age = Number(prompt("Entrez votre âge :"));
+    let sexe = prompt("Entrez votre sexe (M/F) :");
+    let poids;
+
+    if (sexe === "m" || sexe === "M") {
+        poids = (taille - 100 + age/10) * 0.8;
+    }
+    else if (sexe === "f" || sexe === "F") {
+        poids = (taille - 100 + age/10) * 0.9;
+    }
+    alert("Votre poids idéal est : " + poids);
+</script>
+
+</body>
+</html>

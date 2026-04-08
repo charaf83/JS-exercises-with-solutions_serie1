@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Saisie des deux entiers
+    let a = Number(prompt("Entrez le premier entier (a ≥ 1) :"));
+    let b = Number(prompt("Entrez le deuxième entier (b ≥ 1) :"));
+
+    // Vérification des valeurs
+    if (a >= 1 && b >= 1 && !isNaN(a) && !isNaN(b)) {
+
+        // Méthode des différences directement avec a et b
+        while (a !== b) {
+            if (a > b) {
+                a = a - b;
+            } else {
+                b = b - a;
+            }
+        }
+
+        // Affichage du résultat
+        alert("Le PGCD est : " + a);
+
+    } else {
+        alert("Veuillez saisir deux entiers valides ≥ 1.");
+    }
+</script>
+</body>
+</html>

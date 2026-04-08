@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Déclaration et initialisation
+    let str = "200";    // chaîne de caractères
+    let num = 250;      // nombre
+
+    // Affichage des types avant conversion
+    console.log("Avant conversion :");
+    console.log("str =", str, "| type =", typeof str);   // "200" | string
+    console.log("num =", num, "| type =", typeof num);   // 250   | number
+
+    // Conversion
+    let strToNum = Number(str);      // Convertir chaîne en nombre
+    let numToStr = String(num);      // Convertir nombre en chaîne
+
+    // Affichage des valeurs et types après conversion
+    console.log("Après conversion :");
+    console.log("strToNum =", strToNum, "| type =", typeof strToNum);   // 200 | number
+    console.log("numToStr =", numToStr, "| type =", typeof numToStr);   // "250" | string
+
+</script>
+</body>
+</html>

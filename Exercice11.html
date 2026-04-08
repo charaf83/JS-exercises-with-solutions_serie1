@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a = parseFloat(prompt("Entrez le premier nombre :"));
+let b = parseFloat(prompt("Entrez le deuxième nombre :"));
+let op = prompt("Entrez l'opération (+, -, *, /) :");
+
+let resultat;
+
+switch(op) {
+    case "+":
+        resultat = a + b;
+        break;
+    case "-":
+        resultat = a - b;
+        break;
+    case "*":
+        resultat = a * b;
+        break;
+    case "/":
+        if (b !== 0) {
+            resultat = a / b;
+        } else {
+            console.log("Erreur : division par zéro !");
+        }
+        break;
+    default:
+        console.log("Opération invalide !");
+}
+
+if (resultat !== undefined) {
+    console.log("Résultat : " + resultat);
+}
+
+</script>
+</body>
+</html>
